@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsView" customModule="Applicaster_Assessment" customModuleProvider="target">
+            <connections>
+                <outlet property="distanceLabel" destination="zyE-SY-Abi" id="Xem-W5-K3a"/>
+                <outlet property="slider" destination="2KB-yZ-x9T" id="Nwj-Fa-js0"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nnQ-bM-QQE">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="500" minValue="500" maxValue="1500" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-yZ-x9T">
+                    <rect key="frame" x="14" y="40" width="386" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ipi-C0-eET"/>
+                    </constraints>
+                    <connections>
+                        <action selector="distanceChanged:" destination="-1" eventType="valueChanged" id="Q4S-DS-CHw"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-Qq-qkI">
+                    <rect key="frame" x="172" y="120" width="70.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyE-SY-Abi">
+                    <rect key="frame" x="207" y="160.5" width="0.0" height="695.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2Zr-ll-2mj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zyE-SY-Abi" secondAttribute="bottom" constant="40" id="2z3-V2-4Xb"/>
+                <constraint firstItem="DBg-Qq-qkI" firstAttribute="centerX" secondItem="nnQ-bM-QQE" secondAttribute="centerX" id="RzT-qx-EBi"/>
+                <constraint firstItem="2KB-yZ-x9T" firstAttribute="top" secondItem="nnQ-bM-QQE" secondAttribute="top" constant="40" id="Vb5-9z-jWD"/>
+                <constraint firstItem="zyE-SY-Abi" firstAttribute="top" secondItem="DBg-Qq-qkI" secondAttribute="bottom" constant="20" id="bFD-bB-M3j"/>
+                <constraint firstItem="DBg-Qq-qkI" firstAttribute="top" secondItem="2KB-yZ-x9T" secondAttribute="bottom" constant="40" id="hJa-H9-Uwu"/>
+                <constraint firstAttribute="trailing" secondItem="2KB-yZ-x9T" secondAttribute="trailing" constant="16" id="r8T-iZ-dMU"/>
+                <constraint firstItem="zyE-SY-Abi" firstAttribute="centerX" secondItem="nnQ-bM-QQE" secondAttribute="centerX" id="rSa-ts-3bS"/>
+                <constraint firstItem="2KB-yZ-x9T" firstAttribute="leading" secondItem="nnQ-bM-QQE" secondAttribute="leading" constant="16" id="teH-MM-FnO"/>
+            </constraints>
+            <point key="canvasLocation" x="-230" y="285"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>
